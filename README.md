@@ -17,3 +17,6 @@ To install and run the VITAL AI project locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/vital-ai.git
+
+
+![WhatsApp Image 2024-09-28 at 5 53 31 PM](https://github.com/user-attachments/assets/16f7bcd9-e3ad-44b8-8bc3-5980fafe8d8c)
