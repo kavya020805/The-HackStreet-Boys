@@ -9,10 +9,12 @@
 }
 
 .hero-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 95vh;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    height: 300vh;
     padding: 3rem calc((100vw - 1300px) / 2);
+    text-align: center;
+    color: rgb(201, 198, 247);
 }
 
 nav {
@@ -73,4 +75,16 @@ footer {
 
 footer p {
     font-size: 1rem;
+}
+#search2 {
+    background-color: white;
+    height: 40px;
+    border: 2px solid rgba(216, 215, 215, 0.781);
+    background-image: url(log91.PNG);
+    background-size: 40px 38px;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    padding-left: 20px;
+    font-family: Arial;
+    margin-bottom: 20px; /* Add space between elements */
 }

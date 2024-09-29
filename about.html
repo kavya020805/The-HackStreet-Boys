@@ -16,12 +16,70 @@
         <div class="nav-items3">
             <a href="about.html">About</a>
             <a href="appoint.html">Appointment Booking</a>
-            <a><img src="assets/pro.png" height="30rem" width="30rem"></a>
+            <a href="login.html"><img src="assets/pro.png" height="30rem" width="30rem"></a>
         </div>
     </nav>
     <section class="hero">
         <div class="hero-container">
-            
+            <img src="assets/web.jpeg" style="width: 80%;height: 500px;border: 1px solid black;box-shadow: 1px 2px 15px;">
+            <u><b><h1 style="margin-top: 6rem;margin-bottom: 2rem;">Chatbot for Medical Representatives to Plan Doctor
+                Visits</h1></b></u>
+                <br><br>
+            <h3 style="padding: 0 10rem 0 10rem;">
+                The AI-powered chatbot for medical representatives enhances workflow efficiency by assisting with scheduling, follow-ups, and information management. It collects crucial data such as doctor details (name, specialty, location), appointment preferences (preferred time, visit type), and the representative’s schedule. Based on this, the chatbot suggests optimal visit times, minimizes travel time, and sends appointment requests, offering alternate slots if necessary.
+
+                To keep representatives on track, the chatbot provides reminders for upcoming visits, follow-ups from previous meetings, and specific tasks, like discussing a new product. It stores relevant information about doctors, such as interaction history and preferences, offering insights to better tailor future visits.
+                
+                The chatbot also optimizes travel routes, suggests the most efficient paths for multiple appointments, and provides real-time traffic updates to reduce travel time. During visits, it can instantly recall product information, such as dosage, side effects, or drug comparisons.
+                
+                Designed for an interactive, conversational experience, the chatbot handles rescheduling and offers proactive suggestions to improve productivity. Additionally, all data is securely managed, ensuring compliance with industry regulations on privacy and information security. This solution helps medical representatives plan and execute more effective doctor visits.   
+            </h3>
+            <br><br><br>
+            <u><b><h1 style="margin-top: 6rem;margin-bottom: 2rem;">Feedback</h1></b></u>
+            <br><br>
+            <form action="https://formspree.io/f/mpwapvvp" method="POST">
+                <div className={styles.formGroup} ref={PageInput_1}>
+                    <label htmlFor="name">Name</label>
+                    <br />
+                    <input id="search2"
+                        type="text"
+                        name="name"
+                        id="name"
+                        className={styles.inputStandard}
+                        onChange={handleChange}
+                        required
+                    />
+                </div>
+                <div className={styles.formGroup} ref={PageInput_2}>
+                    <label htmlFor="email">Email</label>
+                    <br />
+                    <input id="search2"
+                        type="email"
+                        name="email"
+                        id="email"
+                        className={styles.inputStandard}
+                        onChange={handleChange}
+                        required
+                    />
+                </div>
+                <div className={styles.formGroup} ref={PageInput_3}>
+                    <label htmlFor="message">Type your message here...</label>
+                    <br />
+                    <input id="search2"
+                        type="text"
+                        name="message"
+                        id="message"
+                        className={styles.inputStandard}
+                        onChange={handleChange}
+                        required
+                    />
+                </div>
+                <div className={styles.formGroup} ref={PageBtn1}>
+                    <input className={${styles.hover} ${styles.btn}} type="submit" value="Submit" />
+                </div>
+            </form>
+            <br><br><br><br><br>
+            <h1>With &#10084; by- "The Hackstreet Boys</h1>
         </div>
     </section>
     <footer>
