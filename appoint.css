@@ -85,6 +85,26 @@ button:hover {
     height: 100%;
 }
 
+footer {
+    background-color: #433878;
+    color: #FFE1FF;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
 @media screen and (max-width: 768px) {
     .hero-container {
         grid-template-columns: 1fr;
