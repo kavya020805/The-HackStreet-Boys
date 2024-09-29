@@ -53,4 +53,24 @@ nav a:hover {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 0 1.5rem;
-}   
+}
+
+footer {
+    background-color: #433878;
+    color: #FFE1FF;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+footer p {
+    font-size: 1rem;
+}
