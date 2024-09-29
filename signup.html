@@ -10,94 +10,18 @@
 <body>
     <section class="hero">
         <div class="form-box">
-            <div class="buttonbox">
-                <div id="btn"></div>
-                <button type="button" class="togglebtn" onclick="login()">Patient</button>
-                <button type="button" class="togglebtn" onclick="register()">Doctor</button>
+            <div class="buttonbox" style="text-align: center;">
+                <h1>Sign Up</h1>
             </div>
             <form id="login" class="input">
                 <input type="text" id="name" class="inputfeild" placeholder="Enter Your Name" required><br>
                 <input type="email" id="email" class="inputfeild" placeholder="Email id " required><br>
-                <input type="number" id="mobileNumber" class="inputfeild" placeholder="Mobile Number" required><br><br>
-                <input type="submit" value="Login" id="log" class="submit">
-            </form>
-            
-            <!-- Doctor Register Form -->
-            <form id="register" class="input">
-                <input type="text" class="inputfeild" placeholder="Enter Your Name" required><br>
-                <input type="email" class="inputfeild" placeholder="Email id " required><br>
-
-                <!-- Speciality Dropdown -->
-                <select class="inputfeild" required>
-                    <option value="" disabled selected>Select Speciality</option>
-                    <option value="General Physician">General Physician</option>
-                    <option value="Cardiologist">Cardiologist</option>
-                    <option value="Dermatologist">Dermatologist</option>
-                    <option value="Neurologist">Neurologist</option>
-                    <option value="Orthopedic Surgeon">Orthopedic Surgeon</option>
-                    <option value="Pediatrician">Pediatrician</option>
-                    <option value="Psychiatrist">Psychiatrist</option>
-                    <option value="Gynecologist">Gynecologist</option>
-                    <option value="Ophthalmologist">Ophthalmologist</option>
-                    <option value="Oncologist">Oncologist</option>
-                </select><br>
-
-                <input type="text" class="inputfeild" placeholder="Registration Number" required><br>
-                <input type="number" id="mobileNumber" class="inputfeild" placeholder="Mobile Number" required><br>
-
-                <!-- Working Hours -->
-                <label for="workingHours">Working Hours:</label><br>
-                <input type="number" class="inputfeild" placeholder="From (e.g., 9 AM)" min="0" max="23" required>
-                <input type="number" class="inputfeild" placeholder="To (e.g., 5 PM)" min="0" max="23" required><br><br>
-
-                <input type="checkbox" id="agreeCheckbox" class="checkbox"><span>I Agree to terms & conditions</span><br><br>
-                <input type="submit" value="Register" id="log" class="submit">
+                <input type="password" id="Password" class="inputfeild" placeholder="Password" required><br>
+                <input type="submit" value="Login" id="log" class="submit" style="margin-top: 3rem;">
             </form>
         </div>
     </section>
     
-    <script>
-        let x = document.getElementById("login");
-        let y = document.getElementById("register");
-        let z = document.getElementById("btn");
-
-        function register(){
-            x.style.left = "-400px";
-            y.style.left = "50px";
-            z.style.left = "109px";
-        }
-        
-        function login(){
-            x.style.left = "50px";
-            y.style.left = "480px";
-            z.style.left = "0px";
-        }
-
-        document.getElementById("login").addEventListener("submit", function(event) {
-            let mobileNumber = document.getElementById("mobileNumber").value;
-            var a = document.getElementById('name').value;
-            var b = document.getElementById('email').value;
-            if (mobileNumber.length !== 10 || isNaN(mobileNumber)) {
-                alert("Please enter all the details.");
-                event.preventDefault();
-            }
-            else{
-                alert("Login Successful!");
-                window.close();
-            }
-        });
-
-        document.getElementById("register").addEventListener("submit", function(event) {
-            var checkbox = document.querySelector(".checkbox");
-            if (!checkbox.checked) {
-                alert("Please agree to the terms & conditions to register.");
-                event.preventDefault();
-            }
-            else{
-                alert("Registration Successful!");
-                window.close();
-            }
-        });
-    </script>
+    
 </body>
 </html>

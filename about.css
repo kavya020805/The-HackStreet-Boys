@@ -11,7 +11,7 @@
 .hero-container {
     /* display: grid; */
     /* grid-template-columns: 1fr 1fr; */
-    height: 300vh;
+    height: 280vh;
     padding: 3rem calc((100vw - 1300px) / 2);
     text-align: center;
     color: rgb(201, 198, 247);
